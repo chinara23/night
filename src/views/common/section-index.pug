@@ -1,0 +1,85 @@
+.section.hero
+    include header2
+        //- include ../common/header2
+    .header__ch
+        .user
+            .user__photo
+            img.photo.photo--photo(src="assets/images/myphoto.jpg", alt="picture")
+            .user__title 
+            h2.title.title--ch Чинара Гахраманова
+            .user__subtitle  
+            h4.subtitle Личный сайт веб разработчика
+    .down
+        button.down-button
+            svg.down__svg(style="width: 30px; height: 20px;")
+                use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
+.section.about
+    .about__col.about__col--left
+        .about__ch
+            .about__title
+                h2.title.title--aboutme обо мне
+            .about__information 
+                .user
+                    .user__photo
+                        img.photo.photo--aboutme(src="assets/images/myphoto.jpg", alt="picture")
+                .user__title.user__title--aboutme
+                    h2.title.title--about кто я 
+                .user__subt
+                    .user__parag
+                        p текст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст текст
+                    .user__parag
+                        p текст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текст тексттекст текст текст текст текст текст текс
+    .about__col.about__col--right
+        .about__statis
+            .about__title
+                h2.title.title--about чем я могу быть вам полезна
+            .abour__subtitle
+                .user__parag
+                    p   Больше всего меня привлекает Frontend разрабока, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+            .about__skills
+                ul.skills
+                    li.skills__item
+                        .skills__title
+                            h3.title.title--name Frontend
+                        .skills__list
+                            ul.skill
+                                li.skill__item
+                                li.skill__item
+                                li.skill__item
+                    li.skills__item
+                        .skills__title
+                            h3.title.title--name Backend
+                        .skills__list
+                            ul.skill
+                                li.skill__item
+                                li.skill__item
+                                li.skill__item
+                                li.skill__item
+                    li.skills__item
+                        .skills__title
+                            h3.title.title--name WorlFlow
+                        .skills__list
+                            ul.skill
+                                li.skill__item
+                                li.skill__item
+                                li.skill__item
+section.maps 
+    .map__container
+        .contacts
+            .contacts__title
+                h2.title.title--about контакты
+            .contacts__block
+                ul.contacts__list
+                    li.contacts__item   
+                        img.contacts__svg(src="assets/images/skype.png")
+                        .contacts__subt skype -
+                    li.contacts__item
+                        img.contacts__svg(src="assets/images/phone.png")
+                        a.contacts__subt(href="#")  +7 904 512 98 23
+                    li.contacts__item
+                        img.contacts__svg(src="assets/images/mail.png")
+                        a.contacts__subt(href="#")  chinarachinara2001@mail.ru
+                    li.contacts__item
+                        img.contacts__svg(src="assets/images/mark.png")
+                        .contacts__subt г.Санкт-Петербург
+    include footer 

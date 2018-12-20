@@ -1,0 +1,24 @@
+include ./common/_mixins
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Portfolio | welcome page
+    link(rel="stylesheet", href="assets/styles/main.min.css")
+  body
+    .wrapper
+      .main-content 
+        section.section.main
+          .container
+            block header
+            .par
+              .parallax
+                .blackblock
+                  block content
+
+    script(src="auth.bundle.js")
+
+    

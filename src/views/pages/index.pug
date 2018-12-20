@@ -1,0 +1,16 @@
+extends ../auth.layout.pug
+ 
+block header  
+  include ../common/header
+block content 
+  .user 
+    .user__photo
+      img.photo.photo--photo(src="assets/images/myphoto.jpg", alt="picture")
+    .user__title 
+      h2.title.title--ch Чинара Гахраманова
+    .user__subtitle  
+      h4.subtitle Личный сайт веб разработчика
+    .user__socials 
+        include ../common/socials
+    .user__buttons
+      include ../common/buttons 

@@ -1,0 +1,120 @@
+.hero {
+    background-color: black;
+}
+.burger {
+    background-color: transparent;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.burger__button {
+    background-color: #fff;
+    border-radius: 5px;
+    height: 5px;
+    position: relative;
+    width: 35px;
+    z-index: 5000;
+}
+.burger__button::before{
+    background-color: #fff;
+    border-radius: 5px;
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    transition: .4s;
+    width: 35px;
+    top: -10px;
+}
+.burger__button::after {
+    background-color: #fff;
+    border-radius: 5px;
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    transition: .4s;
+    width: 35px;
+    top: 10px;
+}
+
+.down {
+    top: 90%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    z-index: 100;
+}
+.header__ch {
+    left: 50%;
+    position: absolute; 
+    top: 50%;
+   transform: translate(-50%,-50%);
+} 
+.user {
+    text-align: center;
+}
+.about__title {
+    margin-bottom: 20px;
+    position: relative;
+}
+.title--aboutme {
+  //  display: flex;
+   // justify-content: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.about {
+    display: flex;
+}
+.title--name {
+    font-size: 28px;
+    font-weight: 500;
+}  
+.maps {
+    height: 100vh;
+    position: relative;
+    background-image: url(assets/images/myphoto.jpg);
+}
+.title--about {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;  
+    text-align: center; 
+} 
+.about__col--left {
+    padding: 20px;
+    width: 50%;
+    background-color: #f3f3ef;
+}
+.about__col--right {
+   padding: 20px 0 20px 40px;
+   width: 50%;
+   background-color: #e8e7e1;
+}
+.user__parag {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.photo--aboutme {
+    height: 250px;
+    width: 300px;
+}
+.title--about::after {
+    background-color: #425c66;
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80px;
+}
+.user__title--aboutme {
+    position: relative;
+    margin-bottom: 20px;
+}

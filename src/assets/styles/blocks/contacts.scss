@@ -1,0 +1,31 @@
+.contacts {
+    background-color: hsla(0,0%,98%,.8);
+    color: #425c66;
+    height: 250px;
+    padding: 0 15px;
+    width: 560px;
+}
+.contacts__item {
+    display: flex;
+    width: 50%;
+    margin-bottom: 15px;
+}
+.contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.contacts__subt {
+    text-decoration: none;
+    color:#425c66;
+    line-height: 50px;
+    padding-left: 5px;
+}
+.contacts__title {
+    position: relative;
+    padding: 20px 0;
+}
+.contacts__block {
+    margin-top: 30px;
+}

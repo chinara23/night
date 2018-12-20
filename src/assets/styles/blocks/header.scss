@@ -1,0 +1,38 @@
+.auth {
+    text-decoration: none;
+    padding: 14px 24px;
+    background: transparent;
+    color: white;
+    line-height: 40px;
+    border: 1px solid #fff;
+}
+// .parallax {
+    // background-color: rgba(27,31,41,.5);
+    // width: 360px;
+    // height: 360px;
+// }
+.blackblock {
+    align-self: center;
+    background-color: rgba(27,31,41,.5);
+    height: 360px;
+    padding: 35px 20px;
+    position: relative;
+    width: 360px;
+}
+.header__auth {
+    position: absolute;
+    right: 100px;
+    top: 30px;
+}
+.section {
+    position: relative;
+    height: 100vh;
+    min-height: 650px;
+}
+.main {
+    background: darkgrey;
+    // background-image: url(assets/images/myphoto.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+}
