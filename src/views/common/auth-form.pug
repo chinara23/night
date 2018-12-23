@@ -1,0 +1,25 @@
+.form
+    .form__title
+        .title.title--form авторизуйтесь 
+    form.form__block-first
+        label.form__block.form__block--login
+            input.form__input(type='text' placeholder='Логин' name='name' required)
+        label.form__block.form__block--password
+            input.form__input(type='text' placeholder='Пароль' name='name' required)
+    form.form__block-second 
+        label.form__block.form__block--checkbox 
+            input.form__checkbox(type="checkbox" name="human" required)
+            span.form__checkbox-click
+            span.form__checkbox-title Я человек
+        label.form__block 
+            .form__block-check Вы точно робот?
+            .form__circles
+                label.form__block-circle
+                    input.form__circle(type="radio" name="test" required)
+                    span.form__circle-fake
+                    span.form__circle-word Да
+                label.form__block-circle
+                    input.form__circle(type="radio" name="test" required)
+                    span.form__circle-fake
+                    span.form__circle-word Не уверен
+                

@@ -4,15 +4,15 @@ const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const browserSync = require("browser-sync").create();
-const config = require("./env.paths.json");
-const env = process.env.NODE_ENV;
+// const config = require("./env.paths.json");
+// const env = process.env.NODE_ENV;
 
 // плагины галпа отдельно подключать не нужно,
 // // используем в пайпе как $gp.имяПлагина (без приставки gulp-)
 //  const $gp = require("gulp-load-plugins")();
 
 //  const browserSync = require("browser-sync").create();
- const reload = browserSync.reload;
+//  const reload = browserSync.reload;
 //  const $webpack = require("webpack-stream");
 //  const webpack = require("webpack");
  const del = require("del");
@@ -29,17 +29,17 @@ const paths = {
     src: './src/assets/styles/**/*.scss',
     dest: './dist/assets/styles'
   },
-  images: {
-    images: './src/assets/images/*.*',
-    src: './src/assets/images/**/*.*', 
-    dest: './dist/assets/images' 
-  }
+  // images: {
+  //   images: './src/assets/images/png/*.png',
+  //   src: './src/assets/images/png/*.*', 
+  //   dest: './dist/assets/images/png' 
+  // }
 }
 //слежка 
 function watch() { 
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.templates.src, templates);
-  gulp.watch(paths.images.src, images);
+ // gulp.watch(paths.images.src, images);
 }
 //очистка 
 function clean() {
@@ -73,23 +73,23 @@ function styles() {
 
 //images
 
-gulp.task("images", () => {
-  return gulp
-    .src([
-      `${config.SRC_DIR}/images/**/*.*`,
-      `!${config.SRC_DIR}/images/icons/*.*`
-    ])
-    .pipe(gulp.dest(`${config.DIST_DIR}/assets/images/`));
-});
+// gulp.task("images", () => {
+//   return gulp
+//     .src([
+//       `${config.SRC_DIR}/images/**/*.*`,
+//       `!${config.SRC_DIR}/images/icons/*.*`
+//     ])
+//     .pipe(gulp.dest(`${config.DIST_DIR}/assets/images/`));
+// });
 
 exports.templates = templates ;
 exports.styles = styles ;
-exports.images = images;
+//exports.images = images;
 exports.clean = clean;
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, templates, images),
+  gulp.parallel(styles, templates),
   gulp.parallel(watch, server)
 ));
 

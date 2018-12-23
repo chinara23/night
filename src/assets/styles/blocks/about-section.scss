@@ -1,5 +1,7 @@
 .hero {
-    background-color: black;
+    background-image: url(../images/blog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .burger {
     background-color: transparent;
@@ -9,6 +11,11 @@
     position: absolute;
     right: 30px;
     top: 30px;
+}
+.map__container {
+    // position: absolute;
+    // bottom: 50%;
+    // left: 30%;
 }
 .burger__button {
     background-color: #fff;
@@ -63,7 +70,7 @@
 }
 .title--aboutme {
   //  display: flex;
-   // justify-content: center;
+    justify-content: center;
     font-size: 60px;
     text-transform: uppercase;
 }
@@ -75,15 +82,20 @@
     font-weight: 500;
 }  
 .maps {
+    display: flex;
+    justify-content: center;
     height: 100vh;
     position: relative;
-    background-image: url(assets/images/myphoto.jpg);
+    background-image: url(../images/about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .title--about {
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 700;  
-    text-align: center; 
+    text-align: center;
+    justify-content: center; 
 } 
 .about__col--left {
     padding: 20px;
@@ -106,6 +118,32 @@
 .title--about::after {
     background-color: #425c66;
     bottom: -5px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     content: "";
     display: block;
     height: 2px;

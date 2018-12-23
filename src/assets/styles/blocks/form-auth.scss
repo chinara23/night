@@ -1,0 +1,80 @@
+.title--form {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    justify-content: center;
+}
+.blackblock {
+    justify-content: center;
+}
+.form__block {
+    position: relative;
+    display: block;
+    margin-top: 15px;
+}
+.form__input {
+    width: 100%;
+    height: 40px;
+    padding-left: 50px;
+}
+.form__checkbox-title {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.form__block-check {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+.title--check {
+    justify-content: center;
+}
+.form__circle-word {
+    color: #fff;
+    font-size: 14px;
+}
+.form__circles {
+    margin: 10px 0 0 55px;
+    display: flex; 
+}
+.form__circle {
+    left: -9999px;
+    position: absolute;
+    &:checked + .form__circle-fake::before {
+        height: 8px;
+        width: 8px;
+      }
+}
+.form__buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.form__circle-fake {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    &::before {
+      content: "";
+      display: block;
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      background-color: #0b42b0;
+      transition: .3s;
+    }
+}
+.form__block-circle {
+    display: flex;
+    margin-right: 30px;
+}
