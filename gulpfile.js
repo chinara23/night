@@ -18,7 +18,7 @@ gulp.task("deploy", () => {
 //  const reload = browserSync.reload;
 //  const $webpack = require("webpack-stream");
 //  const webpack = require("webpack");
- const del = require("del");
+ const del = require("del"); 
 
 const paths = {
   root: './dist',
