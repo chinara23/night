@@ -19,11 +19,11 @@
     .my-works__container 
         .my-works__col-left
             .my-works__name
-                h2.title.title--worksname сайт школы онлайн образования
+                h2.title.title--worksname 1 сайт школы онлайн образования
             .my-works__skill
-                .subtitle.subtitle--works html, scc, javascript
+                .subtitles html, scc, javascript
             .my-works__click
-                button.my-works__button Посмотреть сайт
+                a.my-works__link Посмотреть сайт
         .my-works__col-right
             .works__slider
                 ul.slider
@@ -47,7 +47,7 @@
             ul.comments
                 li.comments__item
                     .user
-                        .user__photo
+                        .user__photo.user__photo--up
                             img.photo.photo--comments(src="assets/images/myphoto.jpg", alt="photo")  
                         .user__text
                             p Этот парень проходил обучение веб-разработке не где то,а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
@@ -57,14 +57,29 @@
                             h3.subtitle.subtitle--name - основатель Loftschool
                 li.comments__item
                     .user
-                        .user__photo
+                        .user__photo.user__photo--up
                             img.photo.photo--comments(src="assets/images/myphoto.jpg", alt="photo")  
                         .user__text
                             p Этот парень проходил обучение веб-разработке не где то,а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                         .user__title
-                            h2.title.title--name Ковальчук Дмитрий
+                            h2.title.title--name Сабанцев Владимир
                         .user__subtitle
-                            h3.subtitle - основатель Loftschool
-
-
-    
+                            h3.subtitle - преподаватель
+        .about-me__connect
+            .about-me__blackblock
+                form.form-connect 
+                    .form-connect__title 
+                        .title.title--formcon связаться со мной
+                    .form-connects
+                        label.form-connect__block
+                            input.form-connect__input(type="text" name="name" placeholder="Ваше имя" required)
+                        label.form-connect__block
+                            input.form-connect__input(type="text" name="email" placeholder="Ваш email" required)
+                        label.form-connect__block
+                            textarea.form-connect__input.form-connect__input--mess(type="text" name="message" placeholder="Ваше сообщение" required)
+            ul.navigation
+                li.navigation__item.navigation__item--form-connect
+                    a.navigation__links.navigation__links--send(href="#" type="submit") Отправить
+                li.navigation__item
+                    a.navigation__links.navigation__links--clean(href="#") Очистить
+        include footer 

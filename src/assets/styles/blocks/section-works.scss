@@ -23,8 +23,12 @@
 .my-works {
     position: relative;
 }
+.user__photo--up {
+    padding-bottom: 15px;
+}
 .about-me__container {
     align-items: center;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -45,21 +49,69 @@
     border-radius: 50%;
 }
 .user__text{
-    font-size: 15px;
+    font-size: 18px;
+    color: white;
     text-align: left;
 }
 .about-me__title {
     margin-bottom: 50px;
     width: 50%;
     font-weight: 700;
+    color: white;
     text-transform: uppercase;
     font-size: 60px;
+    text-align: center;
+}
+.title--formcon {
+    color: white;
+    font-size: 35px;
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .user__title {
     margin-top: 10px;
 }  
+.form-connect__title {
+    margin-bottom: 20px;
+    position: relative;
+}
+.navigation {
+    display: flex;
+}
+.about-me__connect {
+    height: 500px;
+    margin-bottom: 70px;
+    position: relative;
+    width: 50%
+}
+
+.form-connect__input {
+    background: hsla(0,0%,98%,.1);
+    border: none;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;background: hsla(0,0%,98%,.1);
+    border: none;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;  
+}
+.form-connect__input--mess {
+    height: 120px;
+}
+.form-connects {
+    display: flex;
+    flex-flow: column;
+}
 .title--name {
+    color: white;
     font-size: 23px;
+    justify-content: center;
     font-weight: 600;
 }
 .subtitle--name {
@@ -68,5 +120,88 @@
     font-weight: 300;
 }
 .about-me {
-    background-image: url(assets/images/back.png);
+    background-image: url(../images/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ //   height: 100vh;
+}
+.navigation__links--clean {
+    background: hsla(0,0%,98%,.1);
+    opacity: .7;
+}
+.navigation__links--send {
+    background-color: #064cbc;
+    border-radius: none;
+}
+.navigation__links {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 18px 0;
+    font-size: 18px;
+}
+.navigation__links--clean:hover {
+    background-color: #064cbc;
+    opacity: 10;
+}
+.my-works__container {
+    display: flex;
+}
+.my-works__col-left {
+    text-align: center;
+    width: 50%;
+}
+.title--worksname {
+    font-size: 35px;
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+}
+.form-connect__title:after {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80px;
+}
+.my-works__name {
+    position: relative;
+}
+.subtitles {
+    color: #064cbd;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.my-works__click {
+    display: flex;
+    justify-content: center;
+}
+.my-works__link {
+    align-items: center;
+    background-color: #064cbd;
+    display: flex;
+    height: 45px;
+    color: #fff;
+    justify-content: center;
+    width: 200px;
+}
+.my-works__name:after {
+    background-color: #000;
+    bottom: 0;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80px;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+
 }
