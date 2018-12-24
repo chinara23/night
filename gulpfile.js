@@ -4,9 +4,12 @@ const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const browserSync = require("browser-sync").create();
+import ghPages from "gulp-gh-pages";
 // const config = require("./env.paths.json");
 // const env = process.env.NODE_ENV;
-
+gulp.task("deploy", () => {
+  return gulp.src("./dist/**/*").pipe(ghPages());
+});
 // плагины галпа отдельно подключать не нужно,
 // // используем в пайпе как $gp.имяПлагина (без приставки gulp-)
 //  const $gp = require("gulp-load-plugins")();
