@@ -2,6 +2,21 @@
     background-image: url(../images/blog.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    background-position:  center;
+  //  clip-path: polygon( 0 0, 0 80%, 50% 100%, 100% 80%, 100% 0);
+}
+.skill__circle {
+    fill: transparent;
+    stroke-width: 15px;
+    transform-origin: center;
+}
+.skill__circle--under {
+    stroke: #dbdad3;
+}
+.skill__circle--above {
+    stroke: #175acf;
+    stroke-dasharray: 251;
 }
 .burger {
     background-color: transparent;
@@ -74,13 +89,33 @@
     font-size: 60px;
     text-transform: uppercase;
 }
-.about {
+.about__skills {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
+}
+.about__skills {
+    display: flex;
+    height: 100vh;
 }
 .title--name {
     font-size: 28px;
     font-weight: 500;
 }  
+// .about__skills:before {
+//     position: absolute;
+//     top: -300px;
+//     height: calc(100% + 300px);
+//     width: 100%;
+//     content: ''; 
+//     z-index: -1;
+    
+// }
+// .about__col {
+//  //   flex-basis: 100%;
+//     padding: 30px;
+// }
+
 .maps {
     display: flex;
     justify-content: center;
@@ -100,12 +135,36 @@
 .about__col--left {
     padding: 20px;
     width: 50%;
+    position: relative;
     background-color: #f3f3ef;
 }
 .about__col--right {
    padding: 20px 0 20px 40px;
+   position: relative;
    width: 50%;
    background-color: #e8e7e1;
+}
+.about__bg-right {
+    width: 100%;
+    background-color: #e8e7e1;
+    bottom: 100%;
+    clip-path: polygon(100% 0,100% 100%,0 100%,0 90%);
+    height: 160px;
+    position: absolute;
+    right: 0;
+}
+.map__container {
+    display: flex;
+    align-items: center;
+}
+.about__bg-left {
+    left: 0;
+    width: 100%;
+    background-color: #f3f3ef;
+    bottom: 100%;
+    clip-path: polygon(0 0,100% 90%,100% 100%,0 100%);
+    height: 160px;
+    position: absolute;
 }
 .user__parag {
     font-size: 14px;
@@ -119,31 +178,6 @@
     background-color: #425c66;
     bottom: -5px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     content: "";
     display: block;
     height: 2px;
@@ -152,7 +186,29 @@
     transform: translate(-50%);
     width: 80px;
 }
+.skills__title {
+    padding: 10px;
+}
 .user__title--aboutme {
     position: relative;
     margin-bottom: 20px;
+}
+.skills-row__list {
+    display: flex;
+}
+.skill__item {
+    height: 115px;
+    width: 115px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.skill {
+    position: relative;
+}
+.skill__title {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }

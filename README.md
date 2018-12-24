@@ -4,7 +4,7 @@
 
 ##  Чтобы развернуть проект необходимо:
 ```sh
-$ git clone https://github.com/chinara23/night.git
+$ git clone git@github.com:loftschool/advanced-boilerplate.git
 $ cd advanced-boilerplate
 $ npm install
 ```
