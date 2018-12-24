@@ -4,17 +4,29 @@ const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const browserSync = require("browser-sync").create();
-import ghPages from "gulp-gh-pages";
-// const config = require("./env.paths.json");
-// const env = process.env.NODE_ENV;
-gulp.task("deploy", () => {
-  return gulp.src("./dist/**/*").pipe(ghPages());
+const ghPages = require("gulp-gh-pages");
+
+
+//gulp.task("deploy", () => { 
+  //return gulp.src("./dist/**/*").pipe(ghPages());
+//});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe($.ghPages({
+      remoteUrl: "https://github.com/chinara23/night"
+    }));
 });
+
+exports.ghPages = ghPages;
+
 // плагины галпа отдельно подключать не нужно,
 // // используем в пайпе как $gp.имяПлагина (без приставки gulp-)
 //  const $gp = require("gulp-load-plugins")();
 
 //  const browserSync = require("browser-sync").create();
+// const config = require("./env.paths.json");
+// const env = process.env.NODE_ENV;
 //  const reload = browserSync.reload;
 //  const $webpack = require("webpack-stream");
 //  const webpack = require("webpack");
@@ -37,11 +49,16 @@ const paths = {
   //   src: './src/assets/images/png/*.*', 
   //   dest: './dist/assets/images/png' 
   // }
+  // images: {
+  //   src: "./src/assets/images/**/*.*",
+  //   dest: "./dist/assets/images/" 
+  // },
 }
 //слежка 
 function watch() { 
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.templates.src, templates);
+  //gulp.watch(paths.ghPages.src, ghPages);
  // gulp.watch(paths.images.src, images);
 }
 //очистка 
@@ -92,7 +109,7 @@ exports.clean = clean;
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, templates),
+  gulp.parallel(styles, templates ),
   gulp.parallel(watch, server)
 ));
 

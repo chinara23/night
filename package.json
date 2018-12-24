@@ -68,6 +68,7 @@
     "not ie <= 8"
   ],
   "dependencies": {
+    "gulp-gh-pages": "^0.5.4",
     "normalize.css": "^7.0.0",
     "promptly": "^3.0.3",
     "pug": "^2.0.3",
