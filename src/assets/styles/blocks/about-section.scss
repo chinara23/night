@@ -62,9 +62,11 @@
     width: 35px;
     top: 10px;
 }
-
+.maps {
+    background-image: url(../images/maps.png);
+}
 .down {
-    top: 90%;
+    top: 80%;
     left: 50%;
     position: absolute;
     transform: translate(-50%);
@@ -121,7 +123,6 @@
     justify-content: center;
     height: 100vh;
     position: relative;
-    background-image: url(../images/about.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

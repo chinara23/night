@@ -2,8 +2,25 @@
     display: flex;
 }
 .socials__item {
-    width: 100px;
-    height: 100px;
-    background-image: url(../assets/images/phone.png); 
-
+    margin-right: 15px;
+}
+.socials--header {
+    padding: 20px;
+}
+.social__item-svg--user {
+    cursor: pointer;
+    fill: #0b42b0;
+}
+.social__item-svg--user:hover {
+   fill: #064cbd;
+}
+.social__item-svg--header {
+    fill: white;
+}
+.socials--user {
+    justify-content: center;
+}
+.social__item-svg--header:hover {
+    fill: #064cbd;
+    cursor: pointer;
 }

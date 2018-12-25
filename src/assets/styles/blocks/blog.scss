@@ -13,6 +13,12 @@
 .information__content {
     font-size: 20px;
 }
+.down__svg {
+    fill:hsla(0,0%,98%,.7);
+}
+.down__svg:hover{
+    fill: white;
+}
 p {
     padding-bottom: 10px;
 }

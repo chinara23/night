@@ -8,7 +8,7 @@
                 h2.title.title--ch Чинара Гахраманова
             .user__subtitle
                 h4.subtitle Личный сайт веб разработчика
-        .down
+        .down.down--down
             button.down-button
                 svg.down__svg(style="width: 30px; height: 20px;")
                     use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
@@ -26,19 +26,20 @@
                 a.my-works__link Посмотреть сайт
         .my-works__col-right
             .works__slider
-                ul.slider
-                    li.slider__item.slider__item--active
-                        img.slider__pic(src="assets/images/works.png", alt="works")
-                    li.slider__item
-                        button.slider__down
-                            svg.slider__down-svg(style="width: 50px; height: 30px;")
-                                use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
-                        img.slider__pic(src="assets/images/second-works.png", alt="works")
-                    li.slider__item
-                        button.slider__up
-                            svg.slider__up-svg(style="width: 50px; height: 30px;")
-                                use(xlink:href="assets/images/icons/sprite.svg#arrow_up")
-                        img.slider__pic(src="assets/images/third-works.png", alt="works")
+                .slider
+                    .slider__item.slider__item--up
+                        img.slider__pic--up(src="assets/images/works.png", alt="works")
+                    .sliders
+                        .slider__item--down
+                            button.slider__down--down
+                                //- svg.slider__down-svg(style="width: 50px; height: 30px;")
+                                //-     use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
+                            img.slider__pic--down(src="assets/images/second-works.png", alt="works")
+                        .slider__item--down
+                            button.slider__up--down
+                                //- svg.slider__up-svg(style="width: 50px; height: 30px;")
+                                //-     use(xlink:href="assets/images/icons/sprite.svg#arrow_up")
+                            img.slider__pic--down(src="assets/images/third-works.png", alt="works")
 .about-me
     .about-me__container
         .about-me__title
@@ -48,21 +49,21 @@
                 li.comments__item
                     .user
                         .user__photo.user__photo--up
-                            img.photo.photo--comments(src="assets/images/myphoto.jpg", alt="photo")  
+                            img.photo.photo--comments(src="assets/images/photo1.png", alt="photo")  
                         .user__text
                             p Этот парень проходил обучение веб-разработке не где то,а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                         .user__title
-                            h2.title.title--name Ковальчук Дмитрий
+                            h2.title.title--username Ковальчук Дмитрий
                         .user__subtitle
                             h3.subtitle.subtitle--name - основатель Loftschool
                 li.comments__item
                     .user
                         .user__photo.user__photo--up
-                            img.photo.photo--comments(src="assets/images/myphoto.jpg", alt="photo")  
+                            img.photo.photo--comments(src="assets/images/photo2.png", alt="photo")  
                         .user__text
                             p Этот парень проходил обучение веб-разработке не где то,а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                         .user__title
-                            h2.title.title--name Сабанцев Владимир
+                            h2.title.title--username Сабанцев Владимир
                         .user__subtitle
                             h3.subtitle - преподаватель
         .about-me__connect
@@ -82,4 +83,8 @@
                     a.navigation__links.navigation__links--send(href="#" type="submit") Отправить
                 li.navigation__item
                     a.navigation__links.navigation__links--clean(href="#") Очистить
+            .up
+            button.up__button
+                svg.up__svg(style="width: 30px; height: 20px;")
+                    use(xlink:href="assets/images/icons/sprite.svg#arrow_up")
         include footer 

@@ -41,7 +41,9 @@
 }
 .footer {
     position: absolute;
-
+}
+.socials--footer {
+    padding: 20px;
 }
 .copyright{
     background-color: #0b42b0;
@@ -50,4 +52,10 @@
     height: 40px;
     color: white;
     line-height: 35px;
+}
+.social__item-svg--footer {
+    fill: #9ea1a3;
+}
+.social__item-svg--footer:hover {
+    fill:#064cbd; 
 }
