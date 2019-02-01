@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio | welcome page</title>
+    <link rel="stylesheet" href="assets/styles/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-content">
+        <section class="section main">
+          <div class="container">
+            <div class="par">
+              <video class="video" src="./assets/images/bg/night.mp4" autoplay loop></video>
+              <div class="parallax__layer"> <img class="parallax__img" src="./assets/images/bg/bg_1.png"></div>
+              <div class="parallax">
+                <div class="paral active">
+                  <div class="blackblock-container">
+                    <div class="blackblock">
+                      <div class="lll">
+                        <div class="user"> 
+                          <div class="user__photo"> <img class="photo photo--photo" src="assets/images/content/myphoto.jpg" alt="picture"></div>
+                          <div class="user__title"> 
+                            <h2 class="title title--ch">Чинара Гахраманова</h2>
+                          </div>
+                          <div class="user__subtitle"> 
+                            <h4 class="subtitle">Личный сайт веб разработчика</h4>
+                          </div>
+                          <div class="user__socials"> 
+                            <ul class="socials socials--user">
+                              <li class="socials__item"><a class="socials__item-link" href="#">
+                                  <svg class="social__item-svg social__item-svg--user" style="width: 30; height: 30px">
+                                    <use xlink:href="assets/images/icons/sprite.svg#vk"></use>
+                                  </svg></a></li>
+                              <li class="socials__item"><a class="socials__item-link" href="#">
+                                  <svg class="social__item-svg social__item-svg--user" style="width: 30; height: 30px">
+                                    <use xlink:href="assets/images/icons/sprite.svg#github"></use>
+                                  </svg></a></li>
+                              <li class="socials__item"><a class="socials__item-link" href="#">
+                                  <svg class="social__item-svg social__item-svg--user" style="width: 30; height: 30px">
+                                    <use xlink:href="assets/images/icons/sprite.svg#in"> </use>
+                                  </svg></a></li>
+                            </ul>
+                          </div>
+                          <div class="user__buttons">
+                            <ul class="navigation__list">
+                              <li class="navigation__item"><a class="navigation__link" href="my-works.html">Мои работы </a></li>
+                              <li class="navigation__item"><a class="navigation__link" href="about.html">Обо мне </a></li>
+                              <li class="navigation__item"><a class="navigation__link" href="blog.html">Блог </a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form">
+                      <div class="lll">
+                        <div class="form__title">
+                          <div class="title title--form">авторизуйтесь </div>
+                        </div>
+                        <form class="form__block-first">
+                          <label class="form__block form__block--login">
+                            <input class="form__input" type="text" placeholder="Логин" name="name" required>
+                          </label>
+                          <label class="form__block form__block--password">
+                            <input class="form__input" type="text" placeholder="Пароль" name="name" required>
+                          </label>
+                        </form>
+                        <div class="form__block-second"> 
+                          <label class="form__block form__block--checkbox"> 
+                            <input class="form__checkbox" type="checkbox" name="human" required><span class="form__checkbox-click"></span><span class="form__checkbox-title">Я человек</span>
+                          </label>
+                          <label class="form__block"> 
+                            <div class="form__block-check">Вы точно робот?</div>
+                            <div class="form__circles">
+                              <label class="form__block-circle">
+                                <input class="form__circle" type="radio" name="test" required><span class="form__circle-fake"></span><span class="form__circle-word">Да</span>
+                              </label>
+                              <label class="form__block-circle">
+                                <input class="form__circle" type="radio" name="test" required><span class="form__circle-fake"></span><span class="form__circle-word">Не уверен</span>
+                              </label>
+                            </div>
+                          </label>
+                          <div class="form__buttons">
+                            <ul class="navigation__list">
+                              <li class="navigation__item">
+                                <button class="navigation__link navigation__link--main" type="button">На главную</button>
+                              </li>
+                              <li class="navigation__item">
+                                <button class="navigation__link" type="submit">Войти</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--    .form__buttonsinclude ../common/auth-buttons 
+                    -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="assets/scripts/auth.bundle.js"></script>
+  </body>
+</html>
